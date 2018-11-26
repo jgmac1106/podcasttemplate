@@ -1,0 +1,234 @@
+/* CSS files add styling rules to your content */
+
+body {
+  margin: 40px;
+}
+.contact {
+  margin: 0 auto ;
+  text-align: left;
+  
+}
+
+.contact h3 {
+  
+  font-size: 1.2em;
+}
+
+.contact .grid-container {
+  display: grid;
+  grid-template-columns: auto; 
+  grid-gap: 10px;
+  padding: 10px;
+}
+.contact .grid-container>div {
+
+  text-align: center;
+  padding:20px 0;
+  font-size: .9em;
+}
+.contact .item1 {
+  grid-row: 1 / span 1;
+}
+.contact p {
+  font-size: 1.3em;
+  text-align: center;
+}
+.podwrapper {
+		display: grid;
+    grid-gap: 10px;
+		grid-template-columns: repeat(12, [col] 100px ) ;
+		grid-template-rows: repeat(3, [row] auto  );
+		background-color: #fff;
+		color: #444;
+}
+
+	.podbox {
+		background-color: #6B6B6B;
+		color: #fff;
+		border-radius: 5px;
+		padding: 20px;
+		font-size: 100%;
+   
+	}
+
+	.podbox .podbox {
+		background-color: #ccc;
+		color: #444;
+	}
+
+	.a {
+		
+		grid-row: row 3;
+    grid-column: 4/ span 2;
+	}
+
+	.b {
+		
+		grid-row: row 3;
+    grid-column: 6/ span 2;
+	}
+
+	.c {
+		
+		grid-row: row 3;
+    grid-column: 8/ span 2;
+	}
+
+	.d{
+		grid-column: col 4 / span 6;
+		grid-row: row 1;
+		display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 0.5fr 3fr;
+    font-size: 1.5em;
+		
+}
+	
+
+	.e{
+    grid-column: 1 / 3;
+		grid-row: 1;
+    padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  opacity: 0.8;
+  -webkit-flex-flow: row wrap;
+  
+}
+	
+
+  .e h1 {
+    font-size: 1em;
+}
+.e h2 {
+    font-size: .75em;
+}
+
+.e .flex-title {
+  padding: 5px;
+  width: 20%;
+  height: 10%;
+  margin-top: 10px;
+  flex-grow: 2;
+  font-weight: bold;
+  font-size: .75em;
+  text-align: center;
+}
+.e .flex-item {
+  padding: 5px;
+  width: 20%;
+  height: 10%;
+  margin-top: 10px;
+  flex-grow: 1;
+  font-weight: bold;
+  font-size: .75em;
+  text-align: center;
+}
+.f {
+		grid-column: 1/3;
+		grid-row: 2;
+      background: url("http://dogzone.jgregorymcverry.com/file/a8ba5f88326f6acaf276a380fa029c79/thumb.jpg") no-repeat;
+    background-size:cover;
+    
+    height:30vh;
+	}
+.g {
+		grid-column: 1/3;
+		grid-row: 3;
+    font-size: 1em;
+	}
+
+.h {
+		
+		grid-row: row 4;
+    grid-column: 4/ span 2;
+	}
+
+@media (max-width: 800px) {
+   .podwrapper {
+		display: grid;
+    grid-template-columns: fit-content(80%);
+    grid-gap: 10px;
+		background-color: #fff;
+		color: #444;
+	}
+  .podbox {
+		background-color: #6B6B6B;
+		color: #fff;
+		border-radius: 5px;
+		padding: 20px;
+		font-size: 50%;
+   
+	}
+
+	.podbox .podbox {
+		background-color: #ccc;
+		color: #444;
+	}
+
+	.a {
+		
+		grid-row: row 3;
+    grid-column: 1;
+	}
+
+	.b {
+		
+		grid-row: row 4;
+    grid-column: 1;
+	}
+
+	.c {
+		
+		grid-row: row 5;
+    grid-column: 1;
+	}
+  .d{
+	
+		grid-row: row 1;
+    grid-column: 1;
+		display: grid;
+    grid-gap: 10px;
+    font-size: .75em;
+		
+}
+  .e{
+    
+    flex-direction: row;
+    font-size: 1em;
+    height:10vh;
+  }
+  .f {
+		grid-column: 1/3;
+		grid-row: 2;
+      background: url("http://dogzone.jgregorymcverry.com/file/a8ba5f88326f6acaf276a380fa029c79/thumb.jpg") no-repeat;
+    background-size:cover;
+    
+    
+	}
+.g {
+		grid-column: 1;
+		grid-row: 3;
+    font-size: 1em;
+	}
+  .h {
+		
+		grid-row: row 6;
+    grid-column: 1;
+    font-size: 1em;
+	}
+audio { 
+  width: 60%;
+  display: block;
+  
+}
+}
+
+
+	
+audio { 
+  width: 90%;
+  display: block;
+  
+}

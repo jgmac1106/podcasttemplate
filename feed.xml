@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<channel>
+<title>$Title</title>
+<link>$url</link>
+<language>en-us</language>
+<itunes:subtitle>$Description</itunes:subtitle>
+<itunes:author>$name</itunes:author>
+<itunes:summary>$summary</itunes:summary>
+<description>$description/description>
+<itunes:owner>
+    <itunes:name>$name</itunes:name>
+    <itunes:email>$email</itunes:email>
+</itunes:owner>
+<itunes:explicit>no</itunes:explicit>
+<itunes:image href="$url" />
+<itunes:category text="$use the categories from ITunes"></itunes:category>
+
+
+
+<!--REPEAT THIS BLOCK FOR EACH EPISODE-->
+<item>
+    <title>$title</title>
+    <itunes:summary>$summary</itunes:summary>
+    <description>$description</description>
+    <link>$url</link>
+    <enclosure url="$media-url" length="1024"></enclosure>
+    <pubDate>Sun, 18 Nov 2018 16:01:07 +0000</pubDate>
+    <itunes:author>$name</itunes:author>
+    <itunes:duration>$length</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+    <guid>$url</guid>
+</item>
+
+<!--END REPEAT--> 
+   
+</channel>
+</rss>
